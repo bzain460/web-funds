@@ -1,0 +1,58 @@
+main{
+    width:970px;
+    background-color: blue;
+    height:auto;
+    padding:10px;
+
+  
+}
+
+
+header{
+    background-color:red;
+    color: white;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+}
+
+nav{
+
+    background-color: rgba(0, 255, 255, 0.452);
+    display: inline-block;
+    border-radius: 10px;
+    padding:10px;
+    vertical-align: top;
+
+}
+article{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display:inline-block;
+    border-radius: 10px;
+    width: 680px;
+    margin: 0px 10px 10px 10px;
+
+}
+footer{
+    background-color: grey;
+    padding-right: 0px;
+    padding:30px;
+    border-radius: 10px;
+    color: honeydew;
+    
+
+
+
+}
+span{
+    color:yellow;
+}

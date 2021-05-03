@@ -1,0 +1,77 @@
+(1):function sigma(n) {
+    var sum = 0;
+    for (var i = 0; i <= n; i++) {
+        sum += i;
+    }
+    return sum
+}
+//////////////////////////////////////
+(2):function factorial(n) {
+    var product = 1;
+    for (var i = 1; i <= n; i++) {
+        console.log("i is " + i);
+        product *= i;
+        console.log("product is " + product);
+    }
+    return product;
+}
+/////////////////////////////////////////////////
+(3):function fib(n) {
+    if (n === 0 || n === 1) {
+        return n;
+    }
+    return fib(n - 2) + fib(n - 1);
+}
+/////////////////////////////////////////////////
+(4):function secondToLast(arr) {
+    if (arr.length <= 2) {
+        return null;
+    }
+    return arr[arr.length - 2];
+}
+///////////////////////////////////////////////////
+(5):function nthToLast(arr, y) {
+    if (arr.length < y) {
+        return null;
+    }
+    return arr[arr.length - y];
+}
+///////////////////////////////////////////////////
+(6):function secondLargest(arr) {
+    var result = arr[0];
+    var temp = 0;
+    var done = false;
+
+    if (arr.length < 2) {
+        return null;
+    }
+
+    while (done == false) {
+        done = true;
+        for (var i = 1; i < arr.length; i++) {
+            if (arr[i - 1] > arr[i]) {
+                done = false;
+                temp = arr[i - 1];
+                arr[i - 1] = arr[i];
+                arr[i] = temp;
+            }
+        }
+    }
+    result = arr[arr.length - 2];
+    return result;
+}
+//////////////////////////////////////////////////////////////////
+(7):function doubleTrouble(arr) {
+    var newarr = [];
+    var n = 0;
+
+    for (var i = 0; i < arr.length; i++) {
+        while (n < 2) {
+            newarr.push(arr[i]);
+            n++;
+        }
+        n = 0;
+    }
+    return newarr;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
